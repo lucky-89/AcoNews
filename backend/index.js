@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors(
   {
-    origin:[""],
+    origin:["https://aco-news-lmu8.vercel.app/"],
     methods:["POST", "GET"],
     credentials:true
   }
