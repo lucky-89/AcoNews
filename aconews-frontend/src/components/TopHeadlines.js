@@ -52,7 +52,7 @@ const TopHeadlines = () => {
     setError(null);
   
     try {
-      const response = await fetch(`http://localhost:5000/api/top-headlines?category=${category}&lang=${lang}&country=${country}`);
+      const response = await fetch(`aco-news-black.vercel.app/top-headlines?category=${category}&lang=${lang}&country=${country}`);
       const data = await response.json();
       console.log('API Response:', data); 
   
