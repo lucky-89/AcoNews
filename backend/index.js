@@ -16,6 +16,10 @@ app.use(cors(
 ));
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+  res.json("Hello")
+});
+
 const PORT = process.env.PORT || 5000;
 const API_KEY = process.env.GNEWS_API_KEY; 
 
