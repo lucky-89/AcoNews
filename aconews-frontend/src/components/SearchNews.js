@@ -12,7 +12,7 @@ const SearchNews = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`aco-news-black.vercel.app/search?q=${query}`);
+      const response = await fetch(`https://aco-news-black.vercel.app/search?q=${query}`);
       const data = await response.json();
       setArticles(data.articles);
     } catch (err) {
